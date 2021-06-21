@@ -13,7 +13,7 @@
 $(document).ready(function() {
     const pathPattern = /^\/doc\/()([0-9.]+)(.*)/;
     const latestStable = {
-        "": "1.19"
+        "": "1.20"
     };
     const names = {
         "": "NumPy"
@@ -29,7 +29,7 @@ $(document).ready(function() {
     };
 
     const showWarning = (msg) => {
-        $('.body').prepend(
+        $('.body, main').prepend(
             '<p style="padding: 1em; border: 1px solid red; background: pink;" class="versionwarning">'
                 + msg + '</p>');
     };
